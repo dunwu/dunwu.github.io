@@ -68,13 +68,13 @@
 - [系统原理面试题](https://github.com/dunwu/blog/blob/master/source/_posts/theory/system-theory-interview.md)
 - [分布式基础理论](https://github.com/dunwu/blog/blob/master/source/_posts/theory/distributed-base-theory.md) - 关键词：拜占庭将军问题、CAP、BASE
 - [分布式事务](https://github.com/dunwu/blog/blob/master/source/_posts/theory/distributed-transaction.md) - 关键词：2PC、3PC、TCC、本地消息表、MQ 消息、SAGA
-- [负载均衡](https://github.com/dunwu/blog/blob/master/source/_posts/theory/load-balance-theory.md) - 关键词：轮询、随机、最少连接、源地址哈希、一致性哈希
-- [缓存](https://github.com/dunwu/blog/blob/master/source/_posts/theory/cache-theory.md) - 关键词：进程内缓存、分布式缓存、缓存雪崩、缓存穿透、缓存击穿、缓存更新、缓存预热、缓存降级
-- [消息队列](https://github.com/dunwu/blog/blob/master/source/_posts/theory/mq-theory.md) - 关键词：重复消费、消息丢失、消息顺序性、消息积压
-- [分布式锁](https://github.com/dunwu/blog/blob/master/source/_posts/theory/distributed-lock-theory.md)
-- [分布式会话](https://github.com/dunwu/blog/blob/master/source/_posts/theory/distributed-session-theory.md) - 关键词：粘性 Session、Session 复制共享、基于缓存的 session 共享
-- [分布式存储](https://github.com/dunwu/blog/blob/master/source/_posts/theory/distributed-storage-theory.md)
-- [分布式 ID](https://github.com/dunwu/blog/blob/master/source/_posts/theory/distributed-id-theory.md) - 关键词：UUID、自增序列、雪花算法、Leaf
+- [负载均衡](https://github.com/dunwu/blog/blob/master/source/_posts/theory/load-balance.md) - 关键词：轮询、随机、最少连接、源地址哈希、一致性哈希
+- [缓存](https://github.com/dunwu/blog/blob/master/source/_posts/theory/cache.md) - 关键词：进程内缓存、分布式缓存、缓存雪崩、缓存穿透、缓存击穿、缓存更新、缓存预热、缓存降级
+- [消息队列](https://github.com/dunwu/blog/blob/master/source/_posts/theory/mq.md) - 关键词：重复消费、消息丢失、消息顺序性、消息积压
+- [分布式锁](https://github.com/dunwu/blog/blob/master/source/_posts/theory/distributed-lock.md)
+- [分布式会话](https://github.com/dunwu/blog/blob/master/source/_posts/theory/distributed-session.md) - 关键词：粘性 Session、Session 复制共享、基于缓存的 session 共享
+- [分布式存储](https://github.com/dunwu/blog/blob/master/source/_posts/theory/distributed-storage.md)
+- [分布式 ID](https://github.com/dunwu/blog/blob/master/source/_posts/theory/distributed-id.md) - 关键词：UUID、自增序列、雪花算法、Leaf
 - [分库分表](https://github.com/dunwu/blog/blob/master/source/_posts/theory/sharding-theory.md)
 - RPC
 
