@@ -1,13 +1,6 @@
----
-title: Travis CI 入门教程
-categories: ['工具']
-tags: ['工具', 'CI']
-date: 2020-02-10 14:40
----
+# Travis CI 极简教程
 
-# Travis CI 入门教程
-
-## 一、简介
+## 简介
 
 [Travis CI](https://travis-ci.org/) 提供的是持续集成服务（Continuous Integration，简称 CI）。我们在软件开发过程中，有构建、测试、部署这些必不可少的步骤，而这些会花掉我们很多的时间。为了提高软件开发的效率，现在涌现了很多自动化工具。[Travis CI](https://travis-ci.org/) 是目前[市场份额](https://github.blog/2017-11-07-github-welcomes-all-ci-tools/)最大的一个，而且有很详细的文档以及可以和 Github 很好的对接。
 
@@ -17,7 +10,7 @@ Travis CI 是 Github 项目最流行的持续集成工具。
 
 持续集成（Continuous integration，缩写 CI）是一种软件工程流程，即团队开发成员经常集成他们的工作，通常每个成员每天至少集成一次，也就意味着每天可能会发生多次集成。每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。
 
-## 二、使用
+## 快速入门
 
 ### 加载 Github 项目
 
@@ -72,9 +65,7 @@ script:  - command1  - command2
 script: command1 && command2
 ```
 
-## 三、构建
-
-## 四、部署
+## 部署
 
 现在脚本是由 Travis CI 来执行的，部署的时候，怎么让 Travis 有权限往 Github 提交代码呢？
 
@@ -178,5 +169,3 @@ chmod u+x deploy.sh
 ```
 before_install:  - chmod u+x deploy.sh
 ```
-
-## 参考资料

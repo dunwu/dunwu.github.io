@@ -1,29 +1,30 @@
 # Git 教程
 
+![git脑图](http://dunwu.test.upcdn.net/cs/web/git/git-summary.png)
+
 ## 📖 内容
+
+- [如何优雅的玩转 Git](如何优雅的玩转Git.md)
+- [Git 帮助手册](Git帮助手册.md)
 
 ## 📚 资料
 
 - **官方资源**
   - [Git 官网](https://git-scm.com/)
   - [Git Github](https://github.com/git/git)
-- **模板**
-  - [gitignore 模板](https://github.com/github/gitignore) - .gitignore 文件模板
-  - [gitattributes 模板](https://github.com/alexkaratarakis/gitattributes) - .gitattributes 文件模板
-  - [github-cheat-sheet](https://github.com/tiimgreen/github-cheat-sheet) - git 命令简略图表
 - **Git 教程**
   - [Learn Git branching](https://learngitbranching.js.org/) - 交互式教程
   - [Git 官方推荐教程](https://git-scm.com/book/zh/v2) - Scott Chacon 的 Git 书。
-  - [Git 中文教程](https://github.com/geeeeeeeeek/git-recipes)
   - [git-flight-rules](https://github.com/k88hudson/git-flight-rules)
   - [git-tips](https://github.com/521xueweihan/git-tips)
   - [git-recipes](https://github.com/geeeeeeeeek/git-recipes)
   - [有关 git 的学习资源](https://github.com/xirong/my-git)
 - **文章**
-  - [Git Cookbook](https://github.com/k88hudson/git-flight-rules/blob/master/README_zh-CN.md)
-  - [Git 奇技淫巧](https://github.com/521xueweihan/git-tips)
-  - [Git 风格指南](https://github.com/aseaday/git-style-guide)
   - [Git 在团队中的最佳实践--如何正确使用 Git Flow](http://www.cnblogs.com/cnblogsfans/p/5075073.html)
+- **模板**
+  - [gitignore 模板](https://github.com/github/gitignore) - .gitignore 文件模板
+  - [gitattributes 模板](https://github.com/alexkaratarakis/gitattributes) - .gitattributes 文件模板
+  - [github-cheat-sheet](https://github.com/tiimgreen/github-cheat-sheet) - git 命令简略图表
 - **Git 工具**
   - [guis](https://git-scm.com/downloads/guis) - Git 官网展示的客户端工具列表。
   - [gogs](https://github.com/gogits/gogs) - 极易搭建的自助 Git 服务。

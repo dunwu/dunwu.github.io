@@ -1,85 +1,257 @@
-# Git Cook Book
-
-## 目录
+# Git 帮助手册
 
 <!-- TOC depthFrom:2 depthTo:3 -->
 
-- [目录](#目录)
-- [提交](#提交)
-    - [查看最近一次提交](#查看最近一次提交)
-    - [修改提交信息](#修改提交信息)
-    - [修改提交信息中的用户名和邮箱](#修改提交信息中的用户名和邮箱)
-    - [从提交中移除一个文件](#从提交中移除一个文件)
-    - [删除最后一次提交](#删除最后一次提交)
-    - [删除任意提交](#删除任意提交)
-    - [我尝试推一个修正后的提交(amended commit)到远程，但是报错](#我尝试推一个修正后的提交amended-commit到远程但是报错)
-    - [我意外的做了一次硬重置(hard reset)，我想找回我的内容](#我意外的做了一次硬重置hard-reset我想找回我的内容)
-- [暂存](#暂存)
-    - [我需要把暂存的内容添加到上一次的提交(commit)](#我需要把暂存的内容添加到上一次的提交commit)
-    - [我想要暂存一个新文件的一部分，而不是这个文件的全部](#我想要暂存一个新文件的一部分而不是这个文件的全部)
-    - [我想把在一个文件里的变化(changes)加到两个提交(commit)里](#我想把在一个文件里的变化changes加到两个提交commit里)
-    - [我想把暂存的内容变成未暂存，把未暂存的内容暂存起来](#我想把暂存的内容变成未暂存把未暂存的内容暂存起来)
-- [未暂存](#未暂存)
-    - [我想把未暂存的内容移动到一个新分支](#我想把未暂存的内容移动到一个新分支)
-    - [我想把未暂存的内容移动到另一个已存在的分支](#我想把未暂存的内容移动到另一个已存在的分支)
-    - [我想丢弃本地未提交的变化(uncommitted changes)](#我想丢弃本地未提交的变化uncommitted-changes)
-    - [我想丢弃某些未暂存的内容](#我想丢弃某些未暂存的内容)
-- [分支](#分支)
-    - [我从错误的分支拉取了内容，或把内容拉取到了错误的分支](#我从错误的分支拉取了内容或把内容拉取到了错误的分支)
-    - [我想扔掉本地的提交(commit)，以便我的分支与远程的保持一致](#我想扔掉本地的提交commit以便我的分支与远程的保持一致)
-    - [我需要提交到一个新分支，但错误的提交到了 master](#我需要提交到一个新分支但错误的提交到了-master)
-    - [我想保留来自另外一个 ref-ish 的整个文件](#我想保留来自另外一个-ref-ish-的整个文件)
-    - [我把几个提交(commit)提交到了同一个分支，而这些提交应该分布在不同的分支里](#我把几个提交commit提交到了同一个分支而这些提交应该分布在不同的分支里)
-    - [我想删除上游(upstream)分支被删除了的本地分支](#我想删除上游upstream分支被删除了的本地分支)
-    - [我不小心删除了我的分支](#我不小心删除了我的分支)
-    - [我想删除一个分支](#我想删除一个分支)
-    - [我想从别人正在工作的远程分支签出(checkout)一个分支](#我想从别人正在工作的远程分支签出checkout一个分支)
-- [Rebase 和 Merge](#rebase-和-merge)
-    - [我想撤销 rebase/merge](#我想撤销-rebasemerge)
-    - [我已经 rebase 过, 但是我不想强推(force push)](#我已经-rebase-过-但是我不想强推force-push)
-    - [我需要组合(combine)几个提交(commit)](#我需要组合combine几个提交commit)
-    - [检查是否分支上的所有提交(commit)都合并(merge)过了](#检查是否分支上的所有提交commit都合并merge过了)
-    - [交互式 rebase(interactive rebase)可能出现的问题](#交互式-rebaseinteractive-rebase可能出现的问题)
-- [其他](#其他)
-    - [克隆所有子模块](#克隆所有子模块)
-    - [删除标签(tag)](#删除标签tag)
-    - [恢复已删除标签(tag)](#恢复已删除标签tag)
-    - [已删除补丁(patch)](#已删除补丁patch)
-- [跟踪文件(Tracking Files)](#跟踪文件tracking-files)
-    - [我只想改变一个文件名字的大小写，而不修改内容](#我只想改变一个文件名字的大小写而不修改内容)
-    - [我想从 Git 删除一个文件，但保留该文件](#我想从-git-删除一个文件但保留该文件)
-- [配置](#配置)
-    - [给 Git 命令添加别名](#给-git-命令添加别名)
-    - [缓存一个仓库的用户名和密码](#缓存一个仓库的用户名和密码)
-- [Fork 项目](#fork-项目)
-- [我不知道我做错了些什么](#我不知道我做错了些什么)
-- [参考资料](#参考资料)
+- [1. 仓库](#1-仓库)
+  - [1.1. 初始化仓库](#11-初始化仓库)
+  - [1.2. 克隆仓库](#12-克隆仓库)
+- [2. 储藏](#2-储藏)
+- [3. 暂存](#3-暂存)
+  - [3.1. 暂存指定文件](#31-暂存指定文件)
+  - [3.2. 暂存当前目录下所有修改](#32-暂存当前目录下所有修改)
+  - [3.3. 暂存所有修改](#33-暂存所有修改)
+  - [3.4. 暂存文件部分内容](#34-暂存文件部分内容)
+  - [3.5. 把暂存的内容变成未暂存，把未暂存的内容暂存起来](#35-把暂存的内容变成未暂存把未暂存的内容暂存起来)
+- [4. 提交](#4-提交)
+  - [4.1. 查看最近一次提交](#41-查看最近一次提交)
+  - [4.2. 提交本地的所有修改](#42-提交本地的所有修改)
+  - [4.3. 提交暂存的修改](#43-提交暂存的修改)
+  - [4.4. 把暂存的内容添加到上一次的提交](#44-把暂存的内容添加到上一次的提交)
+  - [4.5. 附加消息提交](#45-附加消息提交)
+  - [4.6. 修改提交信息](#46-修改提交信息)
+  - [4.7. 修改提交信息中的用户名和邮箱](#47-修改提交信息中的用户名和邮箱)
+  - [4.8. 从提交中移除一个文件](#48-从提交中移除一个文件)
+  - [4.9. 删除最后一次提交](#49-删除最后一次提交)
+  - [4.10. 删除任意提交](#410-删除任意提交)
+  - [4.11. 我尝试推一个修正后的提交(amended commit)到远程，但是报错](#411-我尝试推一个修正后的提交amended-commit到远程但是报错)
+  - [4.12. 不小心强制重置，想找回内容](#412-不小心强制重置想找回内容)
+- [5. 重置](#5-重置)
+- [6. 更新](#6-更新)
+- [7. 推送](#7-推送)
+  - [7.1. 推送提交到远程仓库](#71-推送提交到远程仓库)
+  - [7.2. 发布标签](#72-发布标签)
+- [8. 未暂存](#8-未暂存)
+  - [8.1. 把未暂存的内容移动到一个新分支](#81-把未暂存的内容移动到一个新分支)
+  - [8.2. 我想把未暂存的内容移动到另一个已存在的分支](#82-我想把未暂存的内容移动到另一个已存在的分支)
+  - [8.3. 丢弃本地未提交的变化](#83-丢弃本地未提交的变化)
+  - [8.4. 我想丢弃某些未暂存的内容](#84-我想丢弃某些未暂存的内容)
+- [9. 分支](#9-分支)
+  - [9.1. 列出所有的分支](#91-列出所有的分支)
+  - [9.2. 列出所有的远端分支](#92-列出所有的远端分支)
+  - [9.3. 基于当前分支创建新分支](#93-基于当前分支创建新分支)
+  - [9.4. 基于远程分支创建新分支](#94-基于远程分支创建新分支)
+  - [9.5. 删除本地分支](#95-删除本地分支)
+  - [9.6. 强制删除本地分支](#96-强制删除本地分支)
+  - [9.7. 删除远程分支](#97-删除远程分支)
+  - [9.8. 切换分支](#98-切换分支)
+  - [9.9. 创建并切换到新分支](#99-创建并切换到新分支)
+  - [9.10. 我从错误的分支拉取了内容，或把内容拉取到了错误的分支](#910-我从错误的分支拉取了内容或把内容拉取到了错误的分支)
+  - [9.11. 我想扔掉本地的提交(commit)，以便我的分支与远程的保持一致](#911-我想扔掉本地的提交commit以便我的分支与远程的保持一致)
+  - [9.12. 我需要提交到一个新分支，但错误的提交到了 master](#912-我需要提交到一个新分支但错误的提交到了-master)
+  - [9.13. 我想保留来自另外一个 ref-ish 的整个文件](#913-我想保留来自另外一个-ref-ish-的整个文件)
+  - [9.14. 我把几个提交(commit)提交到了同一个分支，而这些提交应该分布在不同的分支里](#914-我把几个提交commit提交到了同一个分支而这些提交应该分布在不同的分支里)
+  - [9.15. 我想删除上游(upstream)分支被删除了的本地分支](#915-我想删除上游upstream分支被删除了的本地分支)
+  - [9.16. 我不小心删除了我的分支](#916-我不小心删除了我的分支)
+  - [9.17. 我想删除一个分支](#917-我想删除一个分支)
+  - [9.18. 我想从别人正在工作的远程分支签出(checkout)一个分支](#918-我想从别人正在工作的远程分支签出checkout一个分支)
+- [10. 标签](#10-标签)
+  - [10.1. 给当前版本打标签](#101-给当前版本打标签)
+  - [10.2. 给当前版本打标签并附加消息](#102-给当前版本打标签并附加消息)
+- [11. Rebase 和 Merge](#11-rebase-和-merge)
+  - [11.1. 将分支合并到当前 HEAD 中](#111-将分支合并到当前head中)
+  - [11.2. 将当前 HEAD 版本重置到分支中](#112-将当前head版本重置到分支中)
+  - [11.3. 撤销 rebase/merge](#113-撤销-rebasemerge)
+  - [11.4. 我已经 rebase 过, 但是我不想强推(force push)](#114-我已经-rebase-过-但是我不想强推force-push)
+  - [11.5. 我需要组合(combine)几个提交(commit)](#115-我需要组合combine几个提交commit)
+  - [11.6. 检查是否分支上的所有提交(commit)都合并(merge)过了](#116-检查是否分支上的所有提交commit都合并merge过了)
+  - [11.7. 交互式 rebase(interactive rebase)可能出现的问题](#117-交互式-rebaseinteractive-rebase可能出现的问题)
+- [12. 查看信息](#12-查看信息)
+- [13. 其他](#13-其他)
+  - [13.1. 克隆所有子模块](#131-克隆所有子模块)
+  - [13.2. 删除标签(tag)](#132-删除标签tag)
+  - [13.3. 恢复已删除标签(tag)](#133-恢复已删除标签tag)
+  - [13.4. 已删除补丁(patch)](#134-已删除补丁patch)
+- [14. 跟踪文件(Tracking Files)](#14-跟踪文件tracking-files)
+  - [14.1. 我只想改变一个文件名字的大小写，而不修改内容](#141-我只想改变一个文件名字的大小写而不修改内容)
+  - [14.2. 我想从 Git 删除一个文件，但保留该文件](#142-我想从-git-删除一个文件但保留该文件)
+- [15. 配置](#15-配置)
+  - [15.1. 给 Git 命令添加别名](#151-给-git-命令添加别名)
+  - [15.2. 缓存一个仓库的用户名和密码](#152-缓存一个仓库的用户名和密码)
+- [16. Fork 项目](#16-fork-项目)
+- [17. 我不知道我做错了些什么](#17-我不知道我做错了些什么)
+- [18. 参考资料](#18-参考资料)
 
 <!-- /TOC -->
 
-## 暂存
+国外网友制作了一张 Git Cheat Sheet，总结很精炼，各位不妨收藏一下。
+
+本节选择性介绍 git 中比较常用的命令行场景。
+
+![img](http://dunwu.test.upcdn.net/cs/web/git/git-cheat-sheet.png)
+
+## 安装
+
+**（1）Debian/Ubuntu 环境安装**
+
+如果你使用的系统是 Debian/Ubuntu ， 安装命令为：
+
+```shell
+$ apt-get install libcurl4-gnutls-dev libexpat1-dev gettext \
+> libz-dev libssl-dev
+$ apt-get install git-core
+$ git --version
+git version 1.8.1.2
+```
+
+**（2）Centos/RedHat 环境安装**
+
+如果你使用的系统是 Centos/RedHat ，安装命令为：
+
+```shell
+$ yum install curl-devel expat-devel gettext-devel \
+> openssl-devel zlib-devel
+$ yum -y install git-core
+$ git --version
+git version 1.7.1
+```
+
+**（3）Windows 环境安装**
+
+在[Git 官方下载地址](https://git-scm.com/downloads)下载 exe 安装包。按照安装向导安装即可。
+
+建议安装 Git Bash 这个 git 的命令行工具。
+
+**（4）Mac 环境安装**
+
+在[Git 官方下载地址](https://git-scm.com/downloads)下载 mac 安装包。按照安装向导安装即可。
+
+## 配置
+
+Git 自带一个 `git config` 的工具来帮助设置控制 Git 外观和行为的配置变量。 这些变量存储在三个不同的位置：
+
+- `/etc/gitconfig` 文件: 包含系统上每一个用户及他们仓库的通用配置。 如果使用带有 `--system` 选项的 `git config` 时，它会从此文件读写配置变量。
+- `~/.gitconfig` 或 `~/.config/git/config` 文件：只针对当前用户。 可以传递 `--global` 选项让 Git 读写此文件。
+- 当前使用仓库的 Git 目录中的 `config` 文件（就是 `.git/config`）：针对该仓库。
+
+每一个级别覆盖上一级别的配置，所以 `.git/config` 的配置变量会覆盖 `/etc/gitconfig` 中的配置变量。
+
+在 Windows 系统中，Git 会查找 `$HOME` 目录下（一般情况下是 `C:\Users\$USER`）的 `.gitconfig` 文件。 Git 同样也会寻找 `/etc/gitconfig` 文件，但只限于 MSys 的根目录下，即安装 Git 时所选的目标位置。
+
+### 配置用户信息
+
+当安装完 Git 应该做的第一件事就是设置你的用户名称与邮件地址。 这样做很重要，因为每一个 Git 的提交都会使用这些信息，并且它会写入到你的每一次提交中，不可更改：
+
+```shell
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
+
+再次强调，如果使用了 `--global` 选项，那么该命令只需要运行一次，因为之后无论你在该系统上做任何事情， Git 都会使用那些信息。 当你想针对特定项目使用不同的用户名称与邮件地址时，可以在那个项目目录下运行没有 `--global` 选项的命令来配置。
+
+很多 GUI 工具都会在第一次运行时帮助你配置这些信息。
+
+### 给 Git 命令添加别名
+
+在 OS X 和 Linux 下, 你的 Git 的配置文件储存在 `~/.gitconfig`。我在`[alias]` 部分添加了一些快捷别名(和一些我容易拼写错误的)，如下:
+
+```vim
+[alias]
+    a = add
+    amend = commit --amend
+    c = commit
+    ca = commit --amend
+    ci = commit -a
+    co = checkout
+    d = diff
+    dc = diff --changed
+    ds = diff --staged
+    f = fetch
+    loll = log --graph --decorate --pretty=oneline --abbrev-commit
+    m = merge
+    one = log --pretty=oneline
+    outstanding = rebase -i @{u}
+    s = status
+    unpushed = log @{u}
+    wc = whatchanged
+    wip = rebase -i @{u}
+    zap = fetch -p
+```
+
+### 缓存一个仓库的用户名和密码
+
+你可能有一个仓库需要授权，这时你可以缓存用户名和密码，而不用每次推/拉(push/pull)的时候都输入，Credential helper 能帮你。
+
+```shell
+git config --global credential.helper cache
+## Set git to use the credential memory cache
+```
+
+```shell
+git config --global credential.helper 'cache --timeout=3600'
+## Set the cache to timeout after 1 hour (setting is in seconds)
+```
+
+## 1. 仓库
+
+### 1.1. 初始化仓库
+
+```shell
+$ git init
+```
+
+### 1.2. 克隆仓库
+
+```bash
+# 通过 SSH
+$ git clone ssh://user@domain.com/repo.git
+# 通过 HTTP
+$ git clone http://domain.com/user/repo.git
+```
+
+## 2. 储藏
+
+有时，我们需要在同一个项目的不同分支上工作。当需要切换分支时，偏偏本地的工作还没有完成，此时，提交修改显得不严谨，但是不提交代码又无法切换分支。这时，你可以使用 `git stash` 将本地的修改内容作为草稿储藏起来。
+
+官方称之为储藏，但我个人更喜欢称之为存草稿。
+
+```shell
+# 1. 将修改作为当前分支的草稿保存
+$ git stash
+
+# 2. 查看草稿列表
+$ git stash list
+stash@{0}: WIP on master: 6fae349 :memo: Writing docs.
+
+# 3.1 删除草稿
+$ git stash drop stash@{0}
+
+# 3.2 读取草稿
+$ git stash apply stash@{0}
+```
+
+## 3. 暂存
 
 `git add` 命令用于将修改添加到暂存区。
 
-### 暂存指定文件
+### 3.1. 暂存指定文件
 
 ```shell
 git add xxx
 ```
 
-### 暂存当前目录下所有修改
+### 3.2. 暂存当前目录下所有修改
 
 ```shell
 git add .
 ```
 
-### 暂存所有修改
+### 3.3. 暂存所有修改
 
 ```
 git add -A
 ```
 
-### 暂存文件部分内容
+### 3.4. 暂存文件部分内容
 
 暂存文件部分内容
 
@@ -89,7 +261,7 @@ git add --patch filename.x
 
 `-p` 简写。这会打开交互模式， 你将能够用 `s` 选项来分隔提交(commit)；
 
- 然而, 如果这个文件是新的, 会没有这个选择， 添加一个新文件时，这样做:
+然而, 如果这个文件是新的, 会没有这个选择， 添加一个新文件时，这样做:
 
 ```shell
 git add -N filename.x
@@ -97,7 +269,7 @@ git add -N filename.x
 
 然后, 你需要用 `e` 选项来手动选择需要添加的行，执行 `git diff --cached` 将会显示哪些行暂存了哪些行只是保存在本地了。
 
-### 把暂存的内容变成未暂存，把未暂存的内容暂存起来
+### 3.5. 把暂存的内容变成未暂存，把未暂存的内容暂存起来
 
 这个有点困难， 我能想到的最好的方法是先 stash 未暂存的内容， 然后重置(reset)，再 pop 第一步 stashed 的内容, 最后再 add 它们。
 
@@ -108,11 +280,11 @@ git stash pop
 git add -A
 ```
 
-## 提交
+## 4. 提交
 
 `git commit` 命令用于将修改保存到到本地仓库。
 
-### 查看最近一次提交
+### 4.1. 查看最近一次提交
 
 ```shell
 git show
@@ -124,31 +296,31 @@ git show
 git log -n1 -p
 ```
 
-### 提交本地的所有修改
+### 4.2. 提交本地的所有修改
 
 ```shell
 git commit -a
 ```
 
-### 提交暂存的修改
+### 4.3. 提交暂存的修改
 
 ```shell
 git commit
 ```
 
-### 把暂存的内容添加到上一次的提交
+### 4.4. 把暂存的内容添加到上一次的提交
 
 ```shell
 git commit --amend
 ```
 
-### 附加消息提交
+### 4.5. 附加消息提交
 
 ```shell
 git commit -m 'commit message'
 ```
 
-### 修改提交信息
+### 4.6. 修改提交信息
 
 如果你的提交信息写错了且这次提交（commit）还没有推送（push），可以使用以下命令修改：
 
@@ -162,13 +334,13 @@ git commit --amend
 git commit --amend -m 'xxxxxxx'
 ```
 
-### 修改提交信息中的用户名和邮箱
+### 4.7. 修改提交信息中的用户名和邮箱
 
 ```shell
 git commit --amend --author "New Authorname <authoremail@mydomain.com>"
 ```
 
-### 从提交中移除一个文件
+### 4.8. 从提交中移除一个文件
 
 ```shell
 git checkout HEAD^ myfile
@@ -176,7 +348,7 @@ git add -A
 git commit --amend
 ```
 
-### 删除最后一次提交
+### 4.9. 删除最后一次提交
 
 如果你需要删除推了的提交(pushed commits)，你可以使用下面的方法。可是，这会不可逆的改变你的历史，也会搞乱那些已经从该仓库拉取(pulled)了的人的历史。简而言之，如果你不是很确定，千万不要这么做。
 
@@ -194,7 +366,7 @@ git push -f [remote] [branch]
 
 这只能在没有推送之前有用. 如果你已经推了, 唯一安全能做的是 `git revert SHAofBadCommit`， 那会创建一个新的提交(commit)用于撤消前一个提交的所有变化(changes)； 或者, 如果你推的这个分支是 rebase-safe 的 (例如： 其它开发者不会从这个分支拉), 只需要使用 `git push -f`； 更多, 请参考 [the above section](#deleteremove-last-pushed-commit)。
 
-### 删除任意提交
+### 4.10. 删除任意提交
 
 同样的警告：不到万不得已的时候不要这么做.
 
@@ -205,7 +377,7 @@ git push -f [remote] [branch]
 
 或者做一个 [交互式 rebase](#interactive-rebase) 删除那些你想要删除的提交(commit)里所对应的行。
 
-### 我尝试推一个修正后的提交(amended commit)到远程，但是报错
+### 4.11. 我尝试推一个修正后的提交(amended commit)到远程，但是报错
 
 ```shell
 To https://github.com/yourusername/repo.git
@@ -225,7 +397,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 一般来说, **要避免强推**. 最好是创建和推(push)一个新的提交(commit)，而不是强推一个修正后的提交。后者会使那些与该分支或该分支的子分支工作的开发者，在源历史中产生冲突。
 
-### 不小心强制重置，想找回内容
+### 4.12. 不小心强制重置，想找回内容
 
 如果你意外的做了 `git reset --hard`, 你通常能找回你的提交(commit), 因为 Git 对每件事都会有日志，且都会保存几天。
 
@@ -241,15 +413,93 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 这样就完成了。
 
-## 未暂存
+## 5. 重置
+
+撤销本地修改：
+
+```shell
+# 移除缓存区的所有文件（i.e. 撤销上次git add）
+$ git reset HEAD
+
+# 将HEAD重置到上一次提交的版本，并将之后的修改标记为未添加到缓存区的修改
+$ git reset <commit>
+
+# 将HEAD重置到上一次提交的版本，并保留未提交的本地修改
+$ git reset --keep <commit>
+
+# 放弃工作目录下的所有修改
+$ git reset --hard HEAD
+
+# 将HEAD重置到指定的版本，并抛弃该版本之后的所有修改
+$ git reset --hard <commit-hash>
+
+# 用远端分支强制覆盖本地分支
+$ git reset --hard <remote/branch> e.g., upstream/master, origin/my-feature
+
+# 放弃某个文件的所有本地修改
+$ git checkout HEAD <file>
+```
+
+删除添加`.gitignore`文件前错误提交的文件：
+
+```shell
+# 提交一条 git 记录，提交信息为 remove xyz file
+$ git rm -r --cached .
+$ git add .
+$ git commit -m "remove xyz file"
+```
+
+撤销远程修改（创建一个新的提交，并回滚到指定版本）：
+
+```shell
+# revert 哈希号为 commit-hash 的记录
+$ git revert <commit-hash>
+```
+
+彻底删除指定版本：
+
+```shell
+# 执行下面命令后，commit-hash 提交后的记录都会被彻底删除，使用需谨慎
+$ git reset --hard <commit-hash>
+$ git push -f
+```
+
+## 6. 更新
+
+```shell
+# 下载远程端版本，但不合并到HEAD中
+$ git fetch <remote>
+
+# 将远程端版本合并到本地版本中
+$ git pull origin master
+
+# 以rebase方式将远端分支与本地合并
+$ git pull --rebase <remote> <branch>
+```
+
+## 7. 推送
+
+### 7.1. 推送提交到远程仓库
+
+```shell
+git push remote <remote> <branch>
+```
+
+### 7.2. 发布标签
+
+```shell
+git push --tags
+```
+
+## 8. 未暂存
 
 > 未暂存(Unstaged)的内容
 
-### 把未暂存的内容移动到一个新分支
+### 8.1. 把未暂存的内容移动到一个新分支
 
 - `git checkout -b my-branch`
 
-### 我想把未暂存的内容移动到另一个已存在的分支
+### 8.2. 我想把未暂存的内容移动到另一个已存在的分支
 
 ```shell
 git stash
@@ -257,7 +507,7 @@ git checkout my-branch
 git stash pop
 ```
 
-### 丢弃本地未提交的变化
+### 8.3. 丢弃本地未提交的变化
 
 如果你只是想重置源(origin)和你本地(local)之间的一些提交(commit)，你可以：
 
@@ -278,7 +528,7 @@ $ git checkout -f
 git reset filename
 ```
 
-### 我想丢弃某些未暂存的内容
+### 8.4. 我想丢弃某些未暂存的内容
 
 如果你想丢弃工作拷贝中的一部分内容，而不是全部。
 
@@ -306,11 +556,68 @@ $ git stash -p
 $ git stash drop
 ```
 
-## 分支
+## 9. 分支
 
 > 分支(Branches)
 
-### 我从错误的分支拉取了内容，或把内容拉取到了错误的分支
+### 9.1. 列出所有的分支
+
+```bash
+git branch
+```
+
+### 9.2. 列出所有的远端分支
+
+```bash
+git branch -r
+```
+
+### 9.3. 基于当前分支创建新分支
+
+```bash
+git branch <new-branch>
+```
+
+### 9.4. 基于远程分支创建新分支
+
+```bash
+git branch --track <new-branch> <remote-branch>
+```
+
+### 9.5. 删除本地分支
+
+```bash
+git branch -d <branch>
+```
+
+### 9.6. 强制删除本地分支
+
+> 注意：强制删除本地分支，将会丢失未合并的修改
+
+```bash
+git branch -D <branch>
+```
+
+### 9.7. 删除远程分支
+
+```bash
+git push <remote> :<branch> (since Git v1.5.0)
+git push <remote> --delete <branch> (since Git v1.7.0)
+```
+
+### 9.8. 切换分支
+
+```bash
+git checkout <branch>
+```
+
+### 9.9. 创建并切换到新分支
+
+```bash
+git checkout -b <branch>
+```
+
+### 9.10. 我从错误的分支拉取了内容，或把内容拉取到了错误的分支
 
 这是另外一种使用 `git reflog` 情况，找到在这次错误拉(pull) 之前 HEAD 的指向。
 
@@ -328,7 +635,7 @@ git reset --hard c5bc55a
 
 完成。
 
-### 我想扔掉本地的提交(commit)，以便我的分支与远程的保持一致
+### 9.11. 我想扔掉本地的提交(commit)，以便我的分支与远程的保持一致
 
 先确认你没有推(push)你的内容到远程。
 
@@ -348,7 +655,7 @@ git reset --hard c5bc55a
 (master)$ git reset --hard origin/my-branch
 ```
 
-### 我需要提交到一个新分支，但错误的提交到了 master
+### 9.12. 我需要提交到一个新分支，但错误的提交到了 master
 
 在 master 下创建一个新分支，不切换到新分支,仍在 master 下:
 
@@ -379,7 +686,7 @@ HEAD is now at a13b85e
 (master)$ git checkout my-branch
 ```
 
-### 我想保留来自另外一个 ref-ish 的整个文件
+### 9.13. 我想保留来自另外一个 ref-ish 的整个文件
 
 假设你正在做一个原型方案(原文为 working spike (see note)), 有成百的内容，每个都工作得很好。现在, 你提交到了一个分支，保存工作内容:
 
@@ -415,7 +722,7 @@ HEAD is now at a13b85e
 
 Note: Spike solutions are made to analyze or solve the problem. These solutions are used for estimation and discarded once everyone gets clear visualization of the problem. \~ [Wikipedia](https://en.wikipedia.org/wiki/Extreme_programming_practices).
 
-### 我把几个提交(commit)提交到了同一个分支，而这些提交应该分布在不同的分支里
+### 9.14. 我把几个提交(commit)提交到了同一个分支，而这些提交应该分布在不同的分支里
 
 假设你有一个`master`分支， 执行`git log`, 你看到你做过两次提交:
 
@@ -479,7 +786,7 @@ HEAD is now at a13b85e
 (14)$ git cherry-pick 5ea5173
 ```
 
-### 我想删除上游(upstream)分支被删除了的本地分支
+### 9.15. 我想删除上游(upstream)分支被删除了的本地分支
 
 一旦你在 github 上面合并(merge)了一个 pull request, 你就可以删除你 fork 里被合并的分支。 如果你不准备继续在这个分支里工作, 删除这个分支的本地拷贝会更干净，使你不会陷入工作分支和一堆陈旧分支的混乱之中。
 
@@ -487,7 +794,7 @@ HEAD is now at a13b85e
 git fetch -p
 ```
 
-### 我不小心删除了我的分支
+### 9.16. 我不小心删除了我的分支
 
 如果你定期推送到远程, 多数情况下应该是安全的，但有些时候还是可能删除了还没有推到远程的分支。 让我们先创建一个分支和一个新的文件:
 
@@ -556,7 +863,7 @@ README.md foo.txt
 
 看! 我们把删除的文件找回来了。 Git 的 `reflog` 在 rebasing 出错的时候也是同样有用的。
 
-### 我想删除一个分支
+### 9.17. 我想删除一个分支
 
 删除一个远程分支:
 
@@ -576,7 +883,7 @@ README.md foo.txt
 (master)$ git branch -D my-branch
 ```
 
-### 我想从别人正在工作的远程分支签出(checkout)一个分支
+### 9.18. 我想从别人正在工作的远程分支签出(checkout)一个分支
 
 首先, 从远程拉取(fetch) 所有分支:
 
@@ -596,11 +903,64 @@ Switched to a new branch 'daves'
 
 这样就得到了一个`daves`分支的本地拷贝, 任何推过(pushed)的更新，远程都能看到.
 
-## Rebase 和 Merge
+## 10. 标签
 
-> Rebase 和 Merge
+### 10.1. 添加标签
 
-### 我想撤销 rebase/merge
+```shell
+$ git tag <tag-name>
+```
+
+### 10.2. 添加标签并附加消息
+
+```shell
+$ git tag -a <tag-name>
+```
+
+### 13.2. 删除标签
+
+```shell
+git tag -d <tag_name>
+git push <remote> :refs/tags/<tag_name>
+```
+
+### 13.3. 恢复已删除标签
+
+如果你想恢复一个已删除标签(tag), 可以按照下面的步骤: 首先, 需要找到无法访问的标签(unreachable tag):
+
+```shell
+git fsck --unreachable | grep tag
+```
+
+记下这个标签(tag)的 hash，然后用 Git 的 [update-ref](http://git-scm.com/docs/git-update-ref):
+
+```shell
+git update-ref refs/tags/<tag_name> <hash>
+```
+
+这时你的标签(tag)应该已经恢复了。
+
+## 11. Rebase 和 Merge
+
+> merge 与 rebase 虽然是 git 常用功能，但是强烈建议不要使用 git 命令来完成这项工作。
+>
+> 因为如果出现代码冲突，在没有代码比对工具的情况下，实在太艰难了。
+>
+> 你可以考虑使用各种 Git GUI 工具。
+
+### 11.1. 将分支合并到当前 HEAD 中
+
+```bash
+git merge <branch>
+```
+
+### 11.2. 将当前 HEAD 版本重置到分支中
+
+```bash
+git rebase <branch>
+```
+
+### 11.3. 撤销 rebase/merge
 
 你可以合并(merge)或 rebase 了一个错误的分支, 或者完成不了一个进行中的 rebase/merge。 Git 在进行危险操作的时候会把原始的 HEAD 保存在一个叫 ORIG_HEAD 的变量里, 所以要把分支恢复到 rebase/merge 前的状态是很容易的。
 
@@ -608,7 +968,7 @@ Switched to a new branch 'daves'
 (my-branch)$ git reset --hard ORIG_HEAD
 ```
 
-### 我已经 rebase 过, 但是我不想强推(force push)
+### 11.4. 我已经 rebase 过, 但是我不想强推(force push)
 
 不幸的是，如果你想把这些变化(changes)反应到远程分支上，你就必须得强推(force push)。 是因你快进(Fast forward)了提交，改变了 Git 历史, 远程分支不会接受变化(changes)，除非强推(force push)。这就是许多人使用 merge 工作流, 而不是 rebasing 工作流的主要原因之一， 开发者的强推(force push)会使大的团队陷入麻烦。使用时需要注意，一种安全使用 rebase 的方法是，不要把你的变化(changes)反映到远程分支上, 而是按下面的做:
 
@@ -621,7 +981,7 @@ Switched to a new branch 'daves'
 
 更多, 参见 [this SO thread](http://stackoverflow.com/questions/11058312/how-can-i-use-git-rebase-without-requiring-a-forced-push).
 
-### 我需要组合(combine)几个提交(commit)
+### 11.5. 我需要组合(combine)几个提交(commit)
 
 假设你的工作分支将会做对于 `master` 的 pull-request。 一般情况下你不关心提交(commit)的时间戳，只想组合 _所有_ 提交(commit) 到一个单独的里面, 然后重置(reset)重提交(recommit)。 确保主(master)分支是最新的和你的变化都已经提交了, 然后:
 
@@ -737,7 +1097,7 @@ Newer, awesomer features
 
 这会产生一次交互式的 rebase(interactive rebase), 只会列出没有推(push)的提交(commit)， 在这个列表时进行 reorder/fix/squash 都是安全的。
 
-### 检查是否分支上的所有提交(commit)都合并(merge)过了
+### 11.6. 检查是否分支上的所有提交(commit)都合并(merge)过了
 
 检查一个分支上的所有提交(commit)是否都已经合并(merge)到了其它分支, 你应该在这些分支的 head(或任何 commits)之间做一次 diff:
 
@@ -751,7 +1111,7 @@ Newer, awesomer features
 (master)$ git log master ^feature/120-on-scroll --no-merges
 ```
 
-### 交互式 rebase(interactive rebase)可能出现的问题
+### 11.7. 交互式 rebase(interactive rebase)可能出现的问题
 
 #### 这个 rebase 编辑屏幕出现'noop'
 
@@ -815,9 +1175,38 @@ Changes not staged for commit:
 (my-branch)$ git rebase --abort
 ```
 
-## 其他
+## 12. 查看信息
 
-### 克隆所有子模块
+显示工作路径下已修改的文件：`git status`
+
+显示与上次提交版本文件的不同：`git diff`
+
+显示提交历史：
+
+```shell
+# 从最新提交开始，显示所有的提交记录（显示hash， 作者信息，提交的标题和时间）
+$ git log
+
+# 显示某个用户的所有提交
+$ git log --author="username"
+
+# 显示某个文件的所有修改
+$ git log -p <file>
+```
+
+显示搜索内容：
+
+```shell
+# 从当前目录的所有文件中查找文本内容
+$ git grep "Hello"
+
+# 在某一版本中搜索文本
+$ git grep "Hello" v2.5
+```
+
+## 13. 其他
+
+### 13.1. 克隆所有子模块
 
 ```shell
 git clone --recursive git://github.com/foo/bar.git
@@ -829,95 +1218,27 @@ git clone --recursive git://github.com/foo/bar.git
 git submodule update --init --recursive
 ```
 
-### 删除标签(tag)
-
-```shell
-git tag -d <tag_name>
-git push <remote> :refs/tags/<tag_name>
-```
-
-### 恢复已删除标签(tag)
-
-如果你想恢复一个已删除标签(tag), 可以按照下面的步骤: 首先, 需要找到无法访问的标签(unreachable tag):
-
-```shell
-git fsck --unreachable | grep tag
-```
-
-记下这个标签(tag)的 hash，然后用 Git 的 [update-ref](http://git-scm.com/docs/git-update-ref):
-
-```shell
-git update-ref refs/tags/<tag_name> <hash>
-```
-
-这时你的标签(tag)应该已经恢复了。
-
-### 已删除补丁(patch)
+### 13.4. 已删除补丁(patch)
 
 如果某人在 GitHub 上给你发了一个 pull request, 但是然后他删除了他自己的原始 fork, 你将没法克隆他们的提交(commit)或使用 `git am`。在这种情况下, 最好手动的查看他们的提交(commit)，并把它们拷贝到一个本地新分支，然后做提交。
 
 做完提交后, 再修改作者，参见[变更作者](#commit-wrong-author)。 然后, 应用变化, 再发起一个新的 pull request。
 
-## 跟踪文件(Tracking Files)
+## 14. 跟踪文件(Tracking Files)
 
-### 我只想改变一个文件名字的大小写，而不修改内容
+### 14.1. 我只想改变一个文件名字的大小写，而不修改内容
 
 ```shell
 (master)$ git mv --force myfile MyFile
 ```
 
-### 我想从 Git 删除一个文件，但保留该文件
+### 14.2. 我想从 Git 删除一个文件，但保留该文件
 
 ```shell
 (master)$ git rm --cached log.txt
 ```
 
-## 配置
-
-> 配置(Configuration)
-
-### 给 Git 命令添加别名
-
-在 OS X 和 Linux 下, 你的 Git 的配置文件储存在 `~/.gitconfig`。我在`[alias]` 部分添加了一些快捷别名(和一些我容易拼写错误的)，如下:
-
-```vim
-[alias]
-    a = add
-    amend = commit --amend
-    c = commit
-    ca = commit --amend
-    ci = commit -a
-    co = checkout
-    d = diff
-    dc = diff --changed
-    ds = diff --staged
-    f = fetch
-    loll = log --graph --decorate --pretty=oneline --abbrev-commit
-    m = merge
-    one = log --pretty=oneline
-    outstanding = rebase -i @{u}
-    s = status
-    unpushed = log @{u}
-    wc = whatchanged
-    wip = rebase -i @{u}
-    zap = fetch -p
-```
-
-### 缓存一个仓库的用户名和密码
-
-你可能有一个仓库需要授权，这时你可以缓存用户名和密码，而不用每次推/拉(push/pull)的时候都输入，Credential helper 能帮你。
-
-```shell
-git config --global credential.helper cache
-## Set git to use the credential memory cache
-```
-
-```shell
-git config --global credential.helper 'cache --timeout=3600'
-## Set the cache to timeout after 1 hour (setting is in seconds)
-```
-
-## Fork 项目
+## 16. Fork 项目
 
 GitHub 中 Fork 是 服务端的代码仓库克隆（即 新克隆出来的代码仓库在远程服务端），包含了原来的仓库（即 upstream repository，上游仓库）所有内容，如分支、Tag、提交。代码托管服务（如 Github、BitBucket）提供了方便的完成 Fork 操作的功能（在仓库页面点一下 Fork 按钮）。这样有了一个你自己的可以自由提交的远程仓库，然后可以通过的 Pull Request 把你的提交贡献回 原仓库。而对于原仓库 Owner 来说，鼓励别人 Fork 自己的仓库，通过 Pull Request 给自己的仓库做贡献，也能提高了自己仓库的知名度。
 
@@ -944,7 +1265,7 @@ git merge upstream/master
 git rebase upstream/master origin/master
 ```
 
-## 我不知道我做错了些什么
+## 17. 我不知道我做错了些什么
 
 你把事情搞砸了：你 `重置(reset)` 了一些东西, 或者你合并了错误的分支, 亦或你强推了后找不到你自己的提交(commit)了。有些时候, 你一直都做得很好, 但你想回到以前的某个状态。
 
@@ -967,7 +1288,7 @@ git reset --hard 0254ea7
 
 然后使用 git reset 就可以把 master 改回到之前的 commit，这提供了一个在历史被意外更改情况下的安全网。
 
-## 参考资料
+## 18. 参考资料
 
 - **官方资源**
   - [Git 官网](https://git-scm.com/)
