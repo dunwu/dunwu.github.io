@@ -165,12 +165,12 @@
 >
 > 关键词：过长函数、过大的类、基本类型偏执、过长参数列、数据泥团、switch 声明、临时字段、被拒绝的馈赠、异曲同工的类、发散式变化、霰弹式修改、平行继承体系、过多的注释、重复代码、冗余类、纯稚的数据类、夸夸其谈未来性、依恋情结、狎昵关系、过度耦合的消息链、中间人、不完美的库类
 
-- [代码的坏味道和重构](https://github.com/dunwu/blog/blob/master/source/_posts/design/refactor/代码的坏味道和重构.md)
-- [代码坏味道之代码臃肿](https://github.com/dunwu/blog/blob/master/source/_posts/design/refactor/代码坏味道之代码臃肿.md)
-- [代码坏味道之滥用面向对象](https://github.com/dunwu/blog/blob/master/source/_posts/design/refactor/代码坏味道之滥用面向对象.md)
-- [代码坏味道之变革的障碍](https://github.com/dunwu/blog/blob/master/source/_posts/design/refactor/代码坏味道之变革的障碍.md)
-- [代码坏味道之非必要的](https://github.com/dunwu/blog/blob/master/source/_posts/design/refactor/代码坏味道之非必要的.md)
-- [代码坏味道之耦合](https://github.com/dunwu/blog/blob/master/source/_posts/design/refactor/代码坏味道之耦合.md)
+- [代码的坏味道和重构](https://github.com/dunwu/design/blob/master/docs/refactor/代码的坏味道和重构.md)
+- [代码坏味道之代码臃肿](https://github.com/dunwu/design/blob/master/docs/refactor/代码坏味道之代码臃肿.md)
+- [代码坏味道之滥用面向对象](https://github.com/dunwu/design/blob/master/docs/refactor/代码坏味道之滥用面向对象.md)
+- [代码坏味道之变革的障碍](https://github.com/dunwu/design/blob/master/docs/refactor/代码坏味道之变革的障碍.md)
+- [代码坏味道之非必要的](https://github.com/dunwu/design/blob/master/docs/refactor/代码坏味道之非必要的.md)
+- [代码坏味道之耦合](https://github.com/dunwu/design/blob/master/docs/refactor/代码坏味道之耦合.md)
 
 ## 11. 前端技术
 
