@@ -87,7 +87,7 @@
 
 本节选择性介绍 git 中比较常用的命令行场景。
 
-![img](http://dunwu.test.upcdn.net/cs/web/git/git-cheat-sheet.png)
+![img](https://raw.githubusercontent.com/dunwu/images/dev/cs/web/git/git-cheat-sheet.png)
 
 ## 安装
 

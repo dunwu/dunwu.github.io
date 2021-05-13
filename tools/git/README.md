@@ -1,6 +1,6 @@
 # Git 教程
 
-![git脑图](http://dunwu.test.upcdn.net/cs/web/git/git-summary.png)
+![git脑图](https://raw.githubusercontent.com/dunwu/images/dev/cs/web/git/git-summary.png)
 
 ## 📖 内容
 
