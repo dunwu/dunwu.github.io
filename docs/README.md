@@ -1,7 +1,7 @@
 ---
 home: true
 layout: BlogHome
-icon: home
+icon: mdi:home
 title: 首页
 #heroImage: /logo.svg
 heroText: 钝悟的博客
@@ -348,7 +348,6 @@ footer: CC-BY-SA-4.0 Licensed | Copyright © 2015-Now 钝悟
 
 - [缓存面试题](01.Java/14.中间件/02.缓存/01.缓存面试题.md)
 - [Java 缓存中间件](01.Java/14.中间件/02.缓存/02.Java缓存中间件.md)
-- [Memcached 快速入门](01.Java/14.中间件/02.缓存/03.Memcached.md)
 - [Ehcache 快速入门](01.Java/14.中间件/02.缓存/04.Ehcache.md)
 - [Java 进程内缓存](01.Java/14.中间件/02.缓存/05.Java进程内缓存.md)
 - [Http 缓存](01.Java/14.中间件/02.缓存/06.Http缓存.md)

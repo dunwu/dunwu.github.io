@@ -310,7 +310,6 @@
 
 - [缓存面试题](docs/01.Java/14.中间件/02.缓存/01.缓存面试题.md)
 - [Java 缓存中间件](docs/01.Java/14.中间件/02.缓存/02.Java缓存中间件.md)
-- [Memcached 快速入门](docs/01.Java/14.中间件/02.缓存/03.Memcached.md)
 - [Ehcache 快速入门](docs/01.Java/14.中间件/02.缓存/04.Ehcache.md)
 - [Java 进程内缓存](docs/01.Java/14.中间件/02.缓存/05.Java进程内缓存.md)
 - [Http 缓存](docs/01.Java/14.中间件/02.缓存/06.Http缓存.md)

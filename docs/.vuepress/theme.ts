@@ -10,7 +10,7 @@ export default hopeTheme({
     url: "https://dunwu.github.io",
   },
 
-  iconAssets: "fontawesome-with-brands",
+  iconAssets: "iconify",
 
   logo: "/logo.svg",
 
@@ -25,7 +25,7 @@ export default hopeTheme({
   sidebar,
 
   // footer: "默认页脚",
-  
+
   displayFooter: true,
 
   blog: {
