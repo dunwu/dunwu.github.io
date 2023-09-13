@@ -55,6 +55,8 @@ Redis 支持很多丰富的特性，如：**事务** 、**Lua 脚本**、**发�
 
 > 关键词：`定时删除`、`惰性删除`、`定期删除`、`LRU`、`LFU`
 
+![](https://raw.githubusercontent.com/dunwu/images/dev/snap/20230914071206.png)
+
 ### [Redis 持久化](05.Redis持久化.md)
 
 > Redis 是内存型数据库，为了保证数据在宕机后不会丢失，需要将内存中的数据持久化到硬盘上。
@@ -85,7 +87,7 @@ Redis 支持很多丰富的特性，如：**事务** 、**Lua 脚本**、**发�
 
 > 关键词：`SLAVEOF`、`SYNC`、`PSYNC`、`命令传播`、`心跳`
 
-![img](https://raw.githubusercontent.com/dunwu/images/dev/snap/20200712182603.png)
+![](https://raw.githubusercontent.com/dunwu/images/dev/snap/20230914071554.png)
 
 ### [Redis 哨兵](12.Redis哨兵.md)
 
@@ -93,13 +95,13 @@ Redis 支持很多丰富的特性，如：**事务** 、**Lua 脚本**、**发�
 >
 > 关键词：`高可用`、`监控`、`选主`、`故障转移`、`Raft`
 
-![img](https://raw.githubusercontent.com/dunwu/images/dev/snap/20200713072747.png)
+![](https://raw.githubusercontent.com/dunwu/images/dev/snap/20230914071855.png)
 
 ### [Redis 集群](13.Redis集群.md)
 
 > 关键词：`分区`、`重分区`、`寻址`、`故障转移`
 
-![img](https://raw.githubusercontent.com/dunwu/images/dev/snap/20200713100613.png)
+![](https://raw.githubusercontent.com/dunwu/images/dev/snap/20230914072642.png)
 
 ### [Redis 实战](21.Redis实战.md)
 
