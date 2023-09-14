@@ -65,7 +65,7 @@ Redis 支持很多丰富的特性，如：**事务** 、**Lua 脚本**、**发�
 >
 > 关键词：`RDB`、`AOF`、`SAVE`、`BGSAVE`、`appendfsync`
 
-![img](https://raw.githubusercontent.com/dunwu/images/dev/snap/20200224214047.png)
+![](https://raw.githubusercontent.com/dunwu/images/dev/snap/202309150716562.png)
 
 ### [Redis 发布订阅](06.Redis发布订阅.md)
 
