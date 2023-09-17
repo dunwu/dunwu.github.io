@@ -1,35 +1,35 @@
 <p align="center">
-    <a href="https://dunwu.github.io/dunwu.github.io/" target="_blank" rel="noopener noreferrer">
+    <a href="https://dunwu.github.io/waterdrop/" target="_blank" rel="noopener noreferrer">
         <img src="https://raw.githubusercontent.com/dunwu/images/dev/common/dunwu-logo.png" alt="logo" width="150px"/>
     </a>
 </p>
 
 <p align="center">
 
-  <a href="https://github.com/dunwu/dunwu.github.io">
-      <img alt="star" class="no-zoom" src="https://img.shields.io/github/stars/dunwu/dunwu.github.io?style=for-the-badge">
+  <a href="https://github.com/dunwu/waterdrop">
+      <img alt="star" class="no-zoom" src="https://img.shields.io/github/stars/dunwu/waterdrop?style=for-the-badge">
   </a>
 
-  <a href="https://github.com/dunwu/dunwu.github.io">
-      <img alt="fork" class="no-zoom" src="https://img.shields.io/github/forks/dunwu/dunwu.github.io?style=for-the-badge">
+  <a href="https://github.com/dunwu/waterdrop">
+      <img alt="fork" class="no-zoom" src="https://img.shields.io/github/forks/dunwu/waterdrop?style=for-the-badge">
   </a>
 
-  <a href="https://github.com/dunwu/dunwu.github.io/commits/master">
-      <img alt="build" class="no-zoom" src="https://img.shields.io/github/actions/workflow/status/dunwu/dunwu.github.io/deploy.yml?style=for-the-badge">
+  <a href="https://github.com/dunwu/waterdrop/commits/master">
+      <img alt="build" class="no-zoom" src="https://img.shields.io/github/actions/workflow/status/dunwu/waterdrop/deploy.yml?style=for-the-badge">
   </a>
 
   <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">
-      <img alt="code style" class="no-zoom" src="https://img.shields.io/github/license/dunwu/dunwu.github.io?style=for-the-badge">
+      <img alt="code style" class="no-zoom" src="https://img.shields.io/github/license/dunwu/waterdrop?style=for-the-badge">
   </a>
 
 </p>
 
-<h1 align="center">钝悟的技术文档归档</h1>
+<h1 align="center">WATERDROP</h1>
 
-> 💧 [dunwu.github.io](https://github.com/dunwu/dunwu.github.io/) 是钝悟的技术文档归档项目。
+> 💧 waterdrop 是个人的技术文档归档仓库。
 >
-> - 🔁 项目同步维护：[Github](https://github.com/dunwu/dunwu.github.io/)
-> - 📖 电子书阅读：[Github Pages](https://dunwu.github.io/dunwu.github.io/)
+> - 🔁 项目同步维护：[Github](https://github.com/dunwu/waterdrop/)
+> - 📖 电子书阅读：[Github Pages](https://dunwu.github.io/waterdrop/)
 
 ## Java
 
@@ -317,9 +317,7 @@
 
 - [Hystrix](docs/01.Java/14.中间件/03.流量控制/01.Hystrix.md)
 
-## 计算机科学
-
-### 数据结构和算法
+## 数据结构和算法
 
 - **综合**
   - [数据结构和算法指南](docs/11.数据结构和算法/00.综合/01.数据结构和算法指南.md)
@@ -340,24 +338,24 @@
 - [跳表](docs/11.数据结构和算法/04.跳表.md) - 关键词：**`多级索引`**
 - [图](docs/11.数据结构和算法/05.图.md)
 
-### 数据库
+## 数据库
 
-#### 数据库综合
+### 数据库综合
 
 - [Nosql 技术选型](docs/12.数据库/01.数据库综合/01.Nosql技术选型.md)
 - [数据结构与数据库索引](docs/12.数据库/01.数据库综合/02.数据结构与数据库索引.md)
 
-#### 数据库中间件
+### 数据库中间件
 
 - [ShardingSphere 简介](docs/12.数据库/02.数据库中间件/01.Shardingsphere/01.ShardingSphere简介.md)
 - [ShardingSphere Jdbc](docs/12.数据库/02.数据库中间件/01.Shardingsphere/02.ShardingSphereJdbc.md)
 - [版本管理中间件 Flyway](docs/12.数据库/02.数据库中间件/02.Flyway.md)
 
-#### 关系型数据库
+### 关系型数据库
 
 > [关系型数据库](docs/12.数据库/03.关系型数据库) 整理主流关系型数据库知识点。
 
-##### 公共知识
+#### 公共知识
 
 - [关系型数据库面试总结](docs/12.数据库/03.关系型数据库/01.综合/01.关系型数据库面试.md) 💯
 - [SQL 语法基础特性](docs/12.数据库/03.关系型数据库/01.综合/02.SQL语法基础特性.md)
@@ -377,7 +375,6 @@
 - [Mysql 性能优化](docs/12.数据库/03.关系型数据库/02.Mysql/06.Mysql性能优化.md)
 - [Mysql 运维](docs/12.数据库/03.关系型数据库/02.Mysql/20.Mysql运维.md) 🔨
 - [Mysql 配置](docs/12.数据库/03.关系型数据库/02.Mysql/21.Mysql配置.md) 🔨
-- [Mysql 问题](docs/12.数据库/03.关系型数据库/02.Mysql/99.Mysql常见问题.md)
 
 ##### 其他
 
@@ -385,9 +382,9 @@
 - [H2 应用指南](docs/12.数据库/03.关系型数据库/99.其他/02.H2.md)
 - [SqLite 应用指南](docs/12.数据库/03.关系型数据库/99.其他/03.Sqlite.md)
 
-#### 文档数据库
+### 文档数据库
 
-##### MongoDB
+#### MongoDB
 
 > MongoDB 是一个基于文档的分布式数据库，由 C++ 语言编写。旨在为 WEB 应用提供可扩展的高性能数据存储解决方案。
 >
@@ -406,27 +403,15 @@
 - [MongoDB 分片](docs/12.数据库/04.文档数据库/01.MongoDB/09.MongoDB分片.md)
 - [MongoDB 运维](docs/12.数据库/04.文档数据库/01.MongoDB/20.MongoDB运维.md)
 
-#### KV 数据库
+### KV 数据库
 
-##### Redis
+#### [Redis](docs/12.数据库/05.KV数据库/01.Redis)
 
-![img](https://raw.githubusercontent.com/dunwu/images/dev/snap/20200713105627.png)
+[Redis 基本数据类型](docs/12.数据库/05.KV数据库/01.Redis/01.Redis基本数据类型.md)、[Redis 高级数据类型](docs/12.数据库/05.KV数据库/01.Redis/02.Redis高级数据类型.md)、[Redis 数据结构](docs/12.数据库/05.KV数据库/01.Redis/03.Redis数据结构.md)、[Redis 过期删除和内存淘汰](docs/12.数据库/05.KV数据库/01.Redis/11.Redis过期删除和内存淘汰.md)、[Redis 持久化](docs/12.数据库/05.KV数据库/01.Redis/12.Redis持久化.md)、[Redis 事件](docs/12.数据库/05.KV数据库/01.Redis/13.Redis事件.md)、[Redis 复制](docs/12.数据库/05.KV数据库/01.Redis/21.Redis复制.md)、[Redis 哨兵](docs/12.数据库/05.KV数据库/01.Redis/22.Redis哨兵.md)、[Redis 集群](docs/12.数据库/05.KV数据库/01.Redis/23.Redis集群.md)、[Redis 发布订阅](docs/12.数据库/05.KV数据库/01.Redis/31.Redis发布订阅.md)、[Redis 独立功能](docs/12.数据库/05.KV数据库/01.Redis/32.Redis事务.md)、[Redis 管道](docs/12.数据库/05.KV数据库/01.Redis/33.Redis管道.md)、[Redis 脚本](docs/12.数据库/05.KV数据库/01.Redis/34.Redis脚本.md)、[Redis 运维](docs/12.数据库/05.KV数据库/01.Redis/41.Redis运维.md)、[Redis 实战](docs/12.数据库/05.KV数据库/01.Redis/42.Redis实战.md)、[Redis 面试](docs/12.数据库/05.KV数据库/01.Redis/99.Redis面试.md)
 
-- [Redis 面试](docs/12.数据库/05.KV数据库/01.Redis/01.Redis面试.md) 💯
-- [Redis 数据类型](docs/12.数据库/05.KV数据库/01.Redis/02.Redis数据类型.md) - 关键词：`String`、`Hash`、`List`、`Set`、`Zset`、`BitMap`、`HyperLogLog`、`Geo`、`Stream`
-- [Redis 数据结构](docs/12.数据库/05.KV数据库/01.Redis/03.Redis数据结构.md) - 关键词：`SDS`、`链表`、`字典`、`跳表`、`整数集合`、`压缩列表`、`对象`
-- [Redis 过期删除和内存淘汰](docs/12.数据库/05.KV数据库/01.Redis/04.Redis过期删除和内存淘汰.md) - 关键词：`定时删除`、`惰性删除`、`定期删除`、`LRU`、`LFU`
-- [Redis 持久化](docs/12.数据库/05.KV数据库/01.Redis/05.Redis持久化.md) - 关键词：`RDB`、`AOF`、`SAVE`、`BGSAVE`、`appendfsync`
-- [Redis 独立功能](docs/12.数据库/05.KV数据库/01.Redis/06.Redis独立功能.md) - 关键词：`发布与订阅`、`事务`、`Lua`、`管道`
-- [Redis 复制](docs/12.数据库/05.KV数据库/01.Redis/11.Redis复制.md) - 关键词：`SLAVEOF`、`SYNC`、`PSYNC`、`REPLCONF ACK`
-- [Redis 哨兵](docs/12.数据库/05.KV数据库/01.Redis/12.Redis哨兵.md) - 关键词：`Sentinel`、`PING`、`INFO`、`Raft`
-- [Redis 集群](docs/12.数据库/05.KV数据库/01.Redis/13.Redis集群.md) - 关键词：`CLUSTER MEET`、`Hash slot`、`MOVED`、`ASK`、`SLAVEOF no one`、`redis-trib`
-- [Redis 实战](docs/12.数据库/05.KV数据库/01.Redis/21.Redis实战.md) - 关键词：`缓存`、`分布式锁`、`布隆过滤器`
-- [Redis 运维](docs/12.数据库/05.KV数据库/01.Redis/20.Redis运维.md) 🔨 - 关键词：`安装`、`配置`、`命令`、`集群`、`客户端`
+### 列式数据库
 
-#### 列式数据库
-
-##### HBase
+#### HBase
 
 - [HBase 快速入门](docs/12.数据库/06.列式数据库/01.HBase/01.HBase快速入门.md)
 - [HBase 数据模型](docs/12.数据库/06.列式数据库/01.HBase/02.HBase数据模型.md)
@@ -439,9 +424,9 @@
 - [HBase 运维](docs/12.数据库/06.列式数据库/01.HBase/21.HBase运维.md)
 - [HBase 命令](docs/12.数据库/06.列式数据库/01.HBase/22.HBase命令.md)
 
-#### 搜索引擎数据库
+### 搜索引擎数据库
 
-##### Elasticsearch
+#### Elasticsearch
 
 > Elasticsearch 是一个基于 Lucene 的搜索和数据分析工具，它提供了一个分布式服务。Elasticsearch 是遵从 Apache 开源条款的一款开源产品，是当前主流的企业级搜索引擎。
 
@@ -460,7 +445,7 @@
 - [Elasticsearch 集群和分片](docs/12.数据库/07.搜索引擎数据库/01.Elasticsearch/13.Elasticsearch集群和分片.md)
 - [Elasticsearch 运维](docs/12.数据库/07.搜索引擎数据库/01.Elasticsearch/20.Elasticsearch运维.md)
 
-##### Elastic
+#### Elastic
 
 - [Elastic 快速入门](docs/12.数据库/07.搜索引擎数据库/02.Elastic/01.Elastic快速入门.md)
 - [Elastic 技术栈之 Filebeat](docs/12.数据库/07.搜索引擎数据库/02.Elastic/02.Elastic技术栈之Filebeat.md)
@@ -470,7 +455,7 @@
 - [Elastic 技术栈之 Logstash](docs/12.数据库/07.搜索引擎数据库/02.Elastic/06.Elastic技术栈之Logstash.md)
 - [Logstash 运维](docs/12.数据库/07.搜索引擎数据库/02.Elastic/07.Logstash运维.md)
 
-### 网络
+## 网络
 
 > 如果你是做通信领域的开发，或者是 Web 应用的开发，那就或多或少需要了解一些计算机网络的知识 。
 
@@ -503,7 +488,7 @@
 - [CDN](docs/13.网络/03.网络技术/02.CDN.md)
 - [VPN](docs/13.网络/03.网络技术/03.VPN.md)
 
-### 分布式
+## 分布式
 
 #### 分布式综合
 
@@ -729,4 +714,4 @@
 
 ## 🚪 传送
 
-◾ 💧 [钝悟的 IT 知识图谱](https://dunwu.github.io/) ◾
+◾ 💧 [钝悟的 IT 知识图谱](https://dunwu.github.io/waterdrop/) ◾

@@ -1,4 +1,5 @@
 ---
+icon: logos:mysql
 title: Mysql 教程
 date: 2020-02-10 14:27:39
 categories:
@@ -47,7 +48,7 @@ index: false
 
 ### [Mysql 配置](21.Mysql配置.md) 🔨
 
-### [Mysql 常见问题](99.Mysql常见问题)
+### [Mysql 面试](00.Mysql面试)
 
 ## 📚 资料
 

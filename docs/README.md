@@ -415,7 +415,6 @@ footer: CC-BY-SA-4.0 Licensed | Copyright © 2015-Now 钝悟
 - [Mysql 性能优化](12.数据库/03.关系型数据库/02.Mysql/06.Mysql性能优化.md)
 - [Mysql 运维](12.数据库/03.关系型数据库/02.Mysql/20.Mysql运维.md) 🔨
 - [Mysql 配置](12.数据库/03.关系型数据库/02.Mysql/21.Mysql配置.md) 🔨
-- [Mysql 问题](12.数据库/03.关系型数据库/02.Mysql/99.Mysql常见问题.md)
 
 ##### 其他
 
@@ -446,21 +445,9 @@ footer: CC-BY-SA-4.0 Licensed | Copyright © 2015-Now 钝悟
 
 #### KV 数据库
 
-##### Redis
+##### [Redis](12.数据库/05.KV数据库/01.Redis)
 
-![img](https://raw.githubusercontent.com/dunwu/images/dev/snap/20200713105627.png)
-
-- [Redis 面试](12.数据库/05.KV数据库/01.Redis/01.Redis面试.md) 💯
-- [Redis 数据类型](12.数据库/05.KV数据库/01.Redis/02.Redis数据类型.md) - 关键词：`String`、`Hash`、`List`、`Set`、`Zset`、`BitMap`、`HyperLogLog`、`Geo`、`Stream`
-- [Redis 数据结构](12.数据库/05.KV数据库/01.Redis/03.Redis数据结构.md) - 关键词：`SDS`、`链表`、`字典`、`跳表`、`整数集合`、`压缩列表`、`对象`
-- [Redis 过期删除和内存淘汰](12.数据库/05.KV数据库/01.Redis/04.Redis过期删除和内存淘汰.md) - 关键词：`定时删除`、`惰性删除`、`定期删除`、`LRU`、`LFU`
-- [Redis 持久化](12.数据库/05.KV数据库/01.Redis/05.Redis持久化.md) - 关键词：`RDB`、`AOF`、`SAVE`、`BGSAVE`、`appendfsync`
-- [Redis 独立功能](12.数据库/05.KV数据库/01.Redis/06.Redis独立功能.md) - 关键词：`发布与订阅`、`事务`、`Lua`、`管道`
-- [Redis 复制](12.数据库/05.KV数据库/01.Redis/11.Redis复制.md) - 关键词：`SLAVEOF`、`SYNC`、`PSYNC`、`REPLCONF ACK`
-- [Redis 哨兵](12.数据库/05.KV数据库/01.Redis/12.Redis哨兵.md) - 关键词：`Sentinel`、`PING`、`INFO`、`Raft`
-- [Redis 集群](12.数据库/05.KV数据库/01.Redis/13.Redis集群.md) - 关键词：`CLUSTER MEET`、`Hash slot`、`MOVED`、`ASK`、`SLAVEOF no one`、`redis-trib`
-- [Redis 实战](12.数据库/05.KV数据库/01.Redis/21.Redis实战.md) - 关键词：`缓存`、`分布式锁`、`布隆过滤器`
-- [Redis 运维](12.数据库/05.KV数据库/01.Redis/20.Redis运维.md) 🔨 - 关键词：`安装`、`配置`、`命令`、`集群`、`客户端`
+[Redis 基本数据类型](12.数据库/05.KV数据库/01.Redis/01.Redis基本数据类型.md)、[Redis 高级数据类型](12.数据库/05.KV数据库/01.Redis/02.Redis高级数据类型.md)、[Redis 数据结构](12.数据库/05.KV数据库/01.Redis/03.Redis数据结构.md)、[Redis 过期删除和内存淘汰](12.数据库/05.KV数据库/01.Redis/11.Redis过期删除和内存淘汰.md)、[Redis 持久化](12.数据库/05.KV数据库/01.Redis/12.Redis持久化.md)、[Redis 事件](12.数据库/05.KV数据库/01.Redis/13.Redis事件.md)、[Redis 复制](12.数据库/05.KV数据库/01.Redis/21.Redis复制.md)、[Redis 哨兵](12.数据库/05.KV数据库/01.Redis/22.Redis哨兵.md)、[Redis 集群](12.数据库/05.KV数据库/01.Redis/23.Redis集群.md)、[Redis 发布订阅](12.数据库/05.KV数据库/01.Redis/31.Redis发布订阅.md)、[Redis 独立功能](12.数据库/05.KV数据库/01.Redis/32.Redis事务.md)、[Redis 管道](12.数据库/05.KV数据库/01.Redis/33.Redis管道.md)、[Redis 脚本](12.数据库/05.KV数据库/01.Redis/34.Redis脚本.md)、[Redis 运维](12.数据库/05.KV数据库/01.Redis/41.Redis运维.md)、[Redis 实战](12.数据库/05.KV数据库/01.Redis/42.Redis实战.md)、[Redis 面试](12.数据库/05.KV数据库/01.Redis/99.Redis面试.md)
 
 #### 列式数据库
 
@@ -767,4 +754,4 @@ footer: CC-BY-SA-4.0 Licensed | Copyright © 2015-Now 钝悟
 
 ## 🚪 传送
 
-◾ 💧 [钝悟的 IT 知识图谱](https://dunwu.github.io/) ◾
+◾ 💧 [钝悟的 IT 知识图谱](https://dunwu.github.io/waterdrop/) ◾

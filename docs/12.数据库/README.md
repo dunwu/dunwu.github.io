@@ -96,9 +96,11 @@ index: false
 
 ### [KV 数据库](05.KV数据库)
 
-- [`Redis 教程`](05.KV数据库/01.Redis)
+- [**Redis 教程**](05.KV数据库/01.Redis)
 
-  [`Redis 持久化`](05.KV数据库/01.Redis/05.Redis持久化.md)、[`Redis 发布订阅`](05.KV数据库/01.Redis/06.Redis发布订阅.md)、[`Redis 复制`](05.KV数据库/01.Redis/11.Redis复制.md)、[`Redis 过期删除和内存淘汰`](05.KV数据库/01.Redis/04.Redis过期删除和内存淘汰.md)、[`Redis 集群`](05.KV数据库/01.Redis/13.Redis集群.md)、[`Redis 面试`](05.KV数据库/01.Redis/01.Redis面试.md)、[`Redis 哨兵`](05.KV数据库/01.Redis/12.Redis哨兵.md)、[`Redis 实战`](05.KV数据库/01.Redis/21.Redis实战.md)、[`Redis 数据结构`](05.KV数据库/01.Redis/03.Redis数据结构.md)、[`Redis 数据类型`](05.KV数据库/01.Redis/02.Redis数据类型.md)、[`Redis 运维`](05.KV数据库/01.Redis/20.Redis运维.md)
+  [Redis 基本数据类型](05.KV数据库/01.Redis/01.Redis基本数据类型.md)、[Redis 高级数据类型](05.KV数据库/01.Redis/02.Redis高级数据类型.md)、[Redis 数据结构](05.KV数据库/01.Redis/03.Redis数据结构.md)、[Redis 过期删除和内存淘汰](05.KV数据库/01.Redis/11.Redis过期删除和内存淘汰.md)、[Redis 持久化](05.KV数据库/01.Redis/12.Redis持久化.md)、[Redis 事件](05.KV数据库/01.Redis/13.Redis事件.md)、[Redis 复制](05.KV数据库/01.Redis/21.Redis复制.md)、[Redis 哨兵](05.KV数据库/01.Redis/22.Redis哨兵.md)、[Redis 集群](05.KV数据库/01.Redis/23.Redis集群.md)、[Redis 发布订阅](05.KV数据库/01.Redis/31.Redis发布订阅.md)、[Redis 独立功能](05.KV数据库/01.Redis/32.Redis事务.md)、[Redis 管道](05.KV数据库/01.Redis/33.Redis管道.md)、[Redis 脚本](05.KV数据库/01.Redis/34.Redis脚本.md)、[Redis 运维](05.KV数据库/01.Redis/41.Redis运维.md)、[Redis 实战](05.KV数据库/01.Redis/42.Redis实战.md)、[Redis 面试](05.KV数据库/01.Redis/99.Redis面试.md)
+
+- [Memcached 快速入门](05.KV数据库/02.Memcached.md)
 
 ## 资料 📚
 
@@ -335,4 +337,4 @@ index: false
 
 ## 传送 🚪
 
-◾ 💧 [钝悟的 IT 知识图谱](https://dunwu.github.io/) ◾
+◾ 💧 [钝悟的 IT 知识图谱](https://dunwu.github.io/waterdrop/) ◾
