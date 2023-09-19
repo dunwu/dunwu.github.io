@@ -37,22 +37,67 @@ Redis 支持很多丰富的特性，如：**事务** 、**Lua 脚本**、**发�
 
 ## 📖 内容
 
-- [Redis 基本数据类型](01.Redis基本数据类型.md)
-- [Redis 高级数据类型](02.Redis高级数据类型.md)
-- [Redis 数据结构](03.Redis数据结构.md)
-- [Redis 过期删除和内存淘汰](11.Redis过期删除和内存淘汰.md)
-- [Redis 持久化](12.Redis持久化.md)
-- [Redis 事件](13.Redis事件.md)
-- [Redis 复制](21.Redis复制.md)
-- [Redis 哨兵](22.Redis哨兵.md)
-- [Redis 集群](23.Redis集群.md)
-- [Redis 发布订阅](31.Redis发布订阅.md)
-- [Redis 独立功能](32.Redis事务.md)
-- [Redis 管道](33.Redis管道.md)
-- [Redis 脚本](34.Redis脚本.md)
-- [Redis 运维](41.Redis运维.md)
-- [Redis 实战](42.Redis实战.md)
-- [Redis 面试](99.Redis面试.md)
+### [Redis 基本数据类型](01.Redis基本数据类型.md)
+
+> 关键词：`String`、`Hash`、`List`、`Set`、`Zset`
+
+### [Redis 高级数据类型](02.Redis高级数据类型.md)
+
+> 关键词：`BitMap`、`HyperLogLog`、`Geo`、`Stream`
+
+### [Redis 数据结构](03.Redis数据结构.md)
+
+> 关键词：`对象`、`SDS`、`链表`、`字典`、`跳表`、`整数集合`、`压缩列表`
+
+### [Redis 过期删除和内存淘汰](11.Redis过期删除和内存淘汰.md)
+
+> 关键词：`定时删除`、`惰性删除`、`定期删除`、`LRU`、`LFU`
+
+### [Redis 持久化](12.Redis持久化.md)
+
+> 关键词：`RDB`、`AOF`、`SAVE`、`BGSAVE`、`appendfsync`
+
+### [Redis 事件](13.Redis事件.md)
+
+> 关键词：`文件事件`、`时间事件`
+
+### [Redis 复制](21.Redis复制.md)
+
+> 关键词：`SLAVEOF`、`SYNC`、`PSYNC`、`命令传播`、`心跳`
+
+### [Redis 哨兵](22.Redis哨兵.md)
+
+> 关键词：`高可用`、`监控`、`选主`、`故障转移`、`Raft`
+
+### [Redis 集群](23.Redis集群.md)
+
+> 关键词：`高可用`、`监控`、`选主`、`故障转移`、`分区`、`Raft`、`Gossip`
+
+### [Redis 发布订阅](31.Redis发布订阅.md)
+
+> 关键词：`订阅`、`频道`、`模式`
+
+### [Redis 独立功能](32.Redis事务.md)
+
+> 关键词：`事务`、`ACID`
+
+### [Redis 管道](33.Redis管道.md)
+
+> 关键词：`Pipeline`
+
+### [Redis 脚本](34.Redis脚本.md)
+
+> 关键词：`Lua`
+
+### [Redis 运维](41.Redis运维.md)
+
+> 关键词：`安装`、`配置`、`命令`、`集群`、`客户端`
+
+### [Redis 实战](42.Redis实战.md)
+
+> 关键词：`缓存`、`分布式锁`、`布隆过滤器`
+
+### [Redis 面试](99.Redis面试.md)
 
 ## 📚 资料
 
