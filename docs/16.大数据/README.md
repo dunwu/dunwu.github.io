@@ -61,16 +61,16 @@ index: false
 
 ### Kafka
 
-> **[Kafka](https://dunwu.github.io/blog/pages/328f1c/) 是一个分布式流处理平台，此外，它也被广泛应用于消息队列**。
+> **[Kafka](https://dunwu.github.io/waterdrop/pages/328f1c/) 是一个分布式流处理平台，此外，它也被广泛应用于消息队列**。
 
-- [Kafka 快速入门](https://dunwu.github.io/blog/pages/a697a6/)
-- [Kafka 生产者](https://dunwu.github.io/blog/pages/141b2e/)
-- [Kafka 消费者](https://dunwu.github.io/blog/pages/41a171/)
-- [Kafka 集群](https://dunwu.github.io/blog/pages/fc8f54/)
-- [Kafka 可靠传输](https://dunwu.github.io/blog/pages/481bdd/)
-- [Kafka 存储](https://dunwu.github.io/blog/pages/8de948/)
-- [Kafka 流式处理](https://dunwu.github.io/blog/pages/55f66f/)
-- [Kafka 运维](https://dunwu.github.io/blog/pages/21011e/)
+- [Kafka 快速入门](https://dunwu.github.io/waterdrop/pages/a697a6/)
+- [Kafka 生产者](https://dunwu.github.io/waterdrop/pages/141b2e/)
+- [Kafka 消费者](https://dunwu.github.io/waterdrop/pages/41a171/)
+- [Kafka 集群](https://dunwu.github.io/waterdrop/pages/fc8f54/)
+- [Kafka 可靠传输](https://dunwu.github.io/waterdrop/pages/481bdd/)
+- [Kafka 存储](https://dunwu.github.io/waterdrop/pages/8de948/)
+- [Kafka 流式处理](https://dunwu.github.io/waterdrop/pages/55f66f/)
+- [Kafka 运维](https://dunwu.github.io/waterdrop/pages/21011e/)
 
 ## 📚 资料
 

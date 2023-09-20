@@ -75,11 +75,11 @@ Redis 支持很多丰富的特性，如：**事务** 、**Lua 脚本**、**发�
 
 ### [Redis 发布订阅](31.Redis发布订阅.md)
 
-> 关键词：`订阅`、`频道`、`模式`
+> 关键词：`订阅`、`SUBSCRIBE`、`PSUBSCRIBE`、`PUBLISH`、`观察者模式`
 
 ### [Redis 独立功能](32.Redis事务.md)
 
-> 关键词：`事务`、`ACID`
+> 关键词：`事务`、`ACID`、`MULTI`、`EXEC`、`DISCARD`、`WATCH`
 
 ### [Redis 管道](33.Redis管道.md)
 
