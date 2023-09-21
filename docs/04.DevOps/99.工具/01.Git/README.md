@@ -14,7 +14,7 @@ index: false
 
 # Git 教程
 
-![git脑图](https://raw.githubusercontent.com/dunwu/images/dev/cs/web/git/git-summary.png)
+![git脑图](https://raw.githubusercontent.com/dunwu/images/master/cs/web/git/git-summary.png)
 
 ## 📖 内容
 

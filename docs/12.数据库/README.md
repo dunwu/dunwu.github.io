@@ -11,7 +11,7 @@ index: false
 
 <p align="center">
     <a href="https://dunwu.github.io/db-tutorial/" target="_blank" rel="noopener noreferrer">
-        <img src="https://raw.githubusercontent.com/dunwu/images/dev/common/dunwu-logo.png" alt="logo" width="150px"/>
+        <img src="https://raw.githubusercontent.com/dunwu/images/master/common/dunwu-logo.png" alt="logo" width="150px"/>
     </a>
 </p>
 
@@ -54,9 +54,9 @@ index: false
 
   [`关系型数据库面试`](03.关系型数据库/01.综合/01.关系型数据库面试.md)、[`扩展 SQL`](03.关系型数据库/01.综合/03.扩展SQL.md)、[`SQL 语法高级特性`](03.关系型数据库/01.综合/03.SQL语法高级特性.md)、[`SQL 语法基础特性`](03.关系型数据库/01.综合/02.SQL语法基础特性.md)、[`SQL Cheat Sheet`](03.关系型数据库/01.综合/99.SqlCheatSheet.md)
 
-- [`Mysql 教程`](03.关系型数据库/02.Mysql)
+- [Mysql 教程](03.关系型数据库/02.Mysql)
 
-  [`Mysql 常见问题`](03.关系型数据库/02.Mysql/99.Mysql常见问题.md)、[`MySQL 工作流`](03.关系型数据库/02.Mysql/02.MySQL工作流.md)、[`Mysql 配置`](03.关系型数据库/02.Mysql/21.Mysql配置.md)、[`Mysql 事务`](03.关系型数据库/02.Mysql/03.Mysql事务.md)、[`Mysql 索引`](03.关系型数据库/02.Mysql/05.Mysql索引.md)、[`Mysql 锁`](03.关系型数据库/02.Mysql/04.Mysql锁.md)、[`Mysql 性能优化`](03.关系型数据库/02.Mysql/06.Mysql性能优化.md)、[`Mysql 应用指南`](03.关系型数据库/02.Mysql/01.Mysql应用指南.md)、[`Mysql 运维`](03.关系型数据库/02.Mysql/20.Mysql运维.md)
+  [Mysql 架构](03.关系型数据库/02.Mysql/01.Mysql架构.md)、[Mysql 日志](03.关系型数据库/02.Mysql/02.Mysql日志.md)、[Mysql 存储引擎](03.关系型数据库/02.Mysql/03.Mysql存储引擎.md)、[Mysql 事务](03.关系型数据库/02.Mysql/04.Mysql事务.md)、[Mysql 锁](03.关系型数据库/02.Mysql/05.Mysql锁.md)、[Mysql 索引](03.关系型数据库/02.Mysql/06.Mysql索引.md)、[Mysql 高可用](03.关系型数据库/02.Mysql/07.Mysql高可用.md)、[Mysql 优化](03.关系型数据库/02.Mysql/08.Mysql优化.md)、[Mysql 运维](03.关系型数据库/02.Mysql/20.Mysql运维.md)、[Mysql 配置](03.关系型数据库/02.Mysql/21.Mysql配置.md)、[Mysql 面试](03.关系型数据库/02.Mysql/99.Mysql面试.md)
 
 ### [列式数据库](06.列式数据库)
 
@@ -148,6 +148,7 @@ index: false
   - [《MySQL 技术内幕：InnoDB 存储引擎》](https://book.douban.com/subject/24708143/)
   - [《MySQL 必知必会》](https://book.douban.com/subject/3354490/) - Mysql 的基本概念和语法【入门】
 - **教程**
+  - [MySQL 实战 45 讲](https://time.geekbang.org/column/intro/139)
   - [runoob.com MySQL 教程](http://www.runoob.com/mysql/mysql-tutorial.md) - 入门级 SQL 教程
   - [mysql-tutorial](https://github.com/jaywcjlove/mysql-tutorial)
 - **文章**

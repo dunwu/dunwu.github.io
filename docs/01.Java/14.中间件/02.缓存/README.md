@@ -19,7 +19,7 @@ index: false
 >
 > 如果想深入学习缓存，建议先了解一下 [缓存基本原理](https://dunwu.github.io/design/distributed/分布式缓存.html)，有助于理解缓存的特性、原理，使用缓存常见的问题及解决方案。
 
-![img](https://raw.githubusercontent.com/dunwu/images/dev/snap/20200710163555.png)
+![img](https://raw.githubusercontent.com/dunwu/images/master/snap/20200710163555.png)
 
 ## 📖 内容
 
@@ -44,4 +44,4 @@ index: false
 
 ## 🚪 传送
 
-◾ 💧 [钝悟的 IT 知识图谱](https://dunwu.github.io/) ◾
+◾ 💧 [钝悟的 IT 知识图谱](https://dunwu.github.io/waterdrop/) ◾
