@@ -24,11 +24,11 @@ index: false
 
 ### [Mysql 存储引擎](02.Mysql存储引擎.md)
 
-### [Mysql 事务](03.Mysql事务.md)
+### [Mysql 索引](03.Mysql索引.md)
 
-### [Mysql 锁](04.Mysql锁.md)
+### [Mysql 事务](04.Mysql事务.md)
 
-### [Mysql 索引](05.Mysql索引.md)
+### [Mysql 锁](05.Mysql锁.md)
 
 ### [Mysql 高可用](06.Mysql高可用.md)
 

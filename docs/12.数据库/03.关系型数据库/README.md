@@ -27,9 +27,9 @@ index: false
 
 - [Mysql 架构](02.Mysql/01.Mysql架构.md)
 - [Mysql 存储引擎](02.Mysql/02.Mysql存储引擎.md)
-- [Mysql 事务](02.Mysql/03.Mysql事务.md)
-- [Mysql 锁](02.Mysql/04.Mysql锁.md)
-- [Mysql 索引](02.Mysql/05.Mysql索引.md)
+- [Mysql 索引](02.Mysql/03.Mysql索引.md)
+- [Mysql 事务](02.Mysql/04.Mysql事务.md)
+- [Mysql 锁](02.Mysql/05.Mysql锁.md)
 - [Mysql 高可用](02.Mysql/06.Mysql高可用.md)
 - [Mysql 优化](02.Mysql/07.Mysql优化.md)
 - [Mysql 运维](02.Mysql/20.Mysql运维.md)
@@ -48,6 +48,7 @@ index: false
 
 - [《数据库的索引设计与优化》](https://book.douban.com/subject/26419771/)
 - [《SQL 必知必会》](https://book.douban.com/subject/35167240/) - SQL 入门经典
+- [SQL 必知必会](https://time.geekbang.org/column/intro/192) - 极客时间 SQL 入门教程
 
 ### Mysql
 
