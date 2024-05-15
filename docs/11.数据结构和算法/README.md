@@ -5,6 +5,7 @@ categories:
   - 数据结构和算法
 tags:
   - 数据结构和算法
+permalink: /pages/3ccbd4/
 hidden: true
 index: false
 ---

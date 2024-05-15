@@ -9,6 +9,7 @@ tags:
   - 大数据
   - Hadoop
   - HDFS
+permalink: /pages/8d798e/
 hidden: true
 index: false
 ---

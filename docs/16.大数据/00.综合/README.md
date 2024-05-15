@@ -7,6 +7,7 @@ categories:
 tags:
   - 大数据
   - 综合
+permalink: /pages/ad9b6a/
 hidden: true
 index: false
 ---

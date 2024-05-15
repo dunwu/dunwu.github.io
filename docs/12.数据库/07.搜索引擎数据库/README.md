@@ -7,6 +7,7 @@ categories:
 tags:
   - 数据库
   - 搜索引擎数据库
+permalink: /pages/82c9ce/
 hidden: true
 index: false
 ---

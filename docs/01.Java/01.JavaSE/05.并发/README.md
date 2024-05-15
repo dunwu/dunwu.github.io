@@ -9,6 +9,7 @@ tags:
   - Java
   - JavaSE
   - 并发
+permalink: /pages/6e5393/
 hidden: true
 index: false
 ---

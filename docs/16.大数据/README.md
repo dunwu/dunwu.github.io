@@ -5,6 +5,7 @@ categories:
   - 大数据
 tags:
   - 大数据
+permalink: /pages/fc832f/
 hidden: true
 index: false
 ---

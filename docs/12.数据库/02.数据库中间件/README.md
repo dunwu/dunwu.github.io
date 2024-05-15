@@ -7,6 +7,7 @@ categories:
 tags:
   - 数据库
   - 中间件
+permalink: /pages/addb05/
 hidden: true
 index: false
 ---

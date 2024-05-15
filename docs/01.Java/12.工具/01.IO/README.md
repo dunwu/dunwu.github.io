@@ -9,6 +9,7 @@ tags:
   - Java
   - IO
   - 序列化
+permalink: /pages/08b504/
 hidden: true
 index: false
 ---

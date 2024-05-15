@@ -6,6 +6,7 @@ categories:
   - 软件
 tags:
   - Java
+permalink: /pages/2cb045/
 hidden: true
 index: false
 ---

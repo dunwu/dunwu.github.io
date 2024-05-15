@@ -7,6 +7,7 @@ categories:
 tags:
   - 设计
   - 重构
+permalink: /pages/d200c3/
 hidden: true
 index: false
 ---

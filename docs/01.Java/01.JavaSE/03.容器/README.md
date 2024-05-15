@@ -9,6 +9,7 @@ tags:
   - Java
   - JavaSE
   - 容器
+permalink: /pages/9eb49b/
 hidden: true
 index: false
 ---

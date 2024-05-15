@@ -5,6 +5,7 @@ categories:
   - 编程
 tags:
   - 编程
+permalink: /pages/f85bac/
 hidden: true
 index: false
 ---

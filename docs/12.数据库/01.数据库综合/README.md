@@ -7,6 +7,7 @@ categories:
 tags:
   - 数据库
   - 综合
+permalink: /pages/3c3c45/
 hidden: true
 index: false
 ---

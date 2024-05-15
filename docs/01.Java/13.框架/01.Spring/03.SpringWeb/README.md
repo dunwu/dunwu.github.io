@@ -12,6 +12,7 @@ tags:
   - Spring
   - SpringBoot
   - Web
+permalink: /pages/e2586a/
 hidden: true
 index: false
 ---

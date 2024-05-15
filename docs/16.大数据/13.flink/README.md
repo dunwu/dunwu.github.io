@@ -7,6 +7,7 @@ categories:
 tags:
   - 大数据
   - Flink
+permalink: /pages/5c85bd/
 hidden: true
 index: false
 ---

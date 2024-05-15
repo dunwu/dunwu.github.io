@@ -9,6 +9,7 @@ tags:
   - 数据库
   - 搜索引擎数据库
   - Elastic
+permalink: /pages/7bf7f7/
 hidden: true
 index: false
 ---

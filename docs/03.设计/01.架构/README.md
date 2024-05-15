@@ -6,6 +6,7 @@ categories:
   - 架构
 tags:
   - 架构
+permalink: /pages/d9e5d2/
 hidden: true
 index: false
 ---

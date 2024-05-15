@@ -11,6 +11,7 @@ tags:
   - 框架
   - Spring
   - SpringBoot
+permalink: /pages/6bb8c1/
 hidden: true
 index: false
 ---

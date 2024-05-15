@@ -5,6 +5,7 @@ categories:
   - 设计
 tags:
   - 编程
+permalink: /pages/8ea43c/
 hidden: true
 index: false
 ---

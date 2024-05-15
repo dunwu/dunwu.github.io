@@ -9,6 +9,7 @@ tags:
   - Java
   - JavaSE
   - JVM
+permalink: /pages/51172b/
 hidden: true
 index: false
 ---

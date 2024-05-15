@@ -7,6 +7,7 @@ categories:
 tags:
   - 分布式
   - 分布式调度
+permalink: /pages/ba4012/
 hidden: true
 index: false
 ---

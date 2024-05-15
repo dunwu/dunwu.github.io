@@ -5,6 +5,7 @@ categories:
   - 软件工程
 tags:
   - 软件工程
+permalink: /pages/40d1d0/
 hidden: true
 index: false
 ---

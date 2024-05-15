@@ -9,6 +9,7 @@ tags:
   - 操作系统
   - Linux
   - 工具
+permalink: /pages/38874e/
 hidden: true
 index: false
 ---

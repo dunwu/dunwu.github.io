@@ -10,6 +10,7 @@ tags:
   - Java
   - 构建
   - Maven
+permalink: /pages/85f27a/
 hidden: true
 index: false
 ---

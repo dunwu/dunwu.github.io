@@ -7,6 +7,7 @@ categories:
 tags:
   - 数据库
   - 列式数据库
+permalink: /pages/46f339/
 hidden: true
 index: false
 ---

@@ -7,6 +7,7 @@ categories:
 tags:
   - 大数据
   - Hive
+permalink: /pages/a958fe/
 hidden: true
 index: false
 ---

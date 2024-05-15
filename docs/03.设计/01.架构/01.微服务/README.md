@@ -10,6 +10,7 @@ tags:
   - 架构
   - 微服务
   - 分布式
+permalink: /pages/559360/
 hidden: true
 index: false
 ---

@@ -5,6 +5,7 @@ categories:
   - DevOps
 tags:
   - DevOps
+permalink: /pages/1883b8/
 hidden: true
 index: false
 ---

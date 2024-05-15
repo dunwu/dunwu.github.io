@@ -8,6 +8,7 @@ categories:
 tags:
   - Java
   - JavaSE
+permalink: /pages/016137/
 hidden: true
 index: false
 ---

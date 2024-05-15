@@ -5,6 +5,7 @@ categories:
   - 数据库
 tags:
   - 数据库
+permalink: /pages/48b310/
 hidden: true
 index: false
 ---

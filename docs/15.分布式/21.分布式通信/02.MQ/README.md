@@ -9,6 +9,7 @@ tags:
   - Java
   - 中间件
   - MQ
+permalink: /pages/dfe847/
 hidden: true
 index: false
 ---

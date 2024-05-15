@@ -10,6 +10,7 @@ tags:
   - 数据库
   - 关系型数据库
   - Mysql
+permalink: /pages/a5b63b/
 hidden: true
 index: false
 ---

@@ -9,6 +9,7 @@ tags:
   - Java
   - JavaSE
   - JVM
+permalink: /pages/ebf8d4/
 ---
 
 # JVM 和 Java 特性

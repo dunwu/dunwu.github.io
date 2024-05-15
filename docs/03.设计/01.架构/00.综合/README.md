@@ -8,6 +8,7 @@ categories:
 tags:
   - 设计
   - 架构
+permalink: /pages/f3d238/
 hidden: true
 index: false
 ---

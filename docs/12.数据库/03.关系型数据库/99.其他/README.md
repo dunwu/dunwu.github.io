@@ -8,6 +8,7 @@ categories:
 tags:
   - 数据库
   - 关系型数据库
+permalink: /pages/ca9888/
 hidden: true
 index: false
 ---

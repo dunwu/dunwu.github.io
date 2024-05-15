@@ -9,6 +9,7 @@ tags:
   - Java
   - JavaSE
   - IO
+permalink: /pages/e285c8/
 hidden: true
 index: false
 ---

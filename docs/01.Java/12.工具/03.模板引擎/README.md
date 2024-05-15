@@ -8,6 +8,7 @@ categories:
 tags:
   - Java
   - 模板引擎
+permalink: /pages/9d37fa/
 hidden: true
 index: false
 ---

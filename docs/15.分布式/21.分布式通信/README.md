@@ -7,6 +7,7 @@ categories:
 tags:
   - 分布式
   - 分布式通信
+permalink: /pages/3a28d0/
 hidden: true
 index: false
 ---

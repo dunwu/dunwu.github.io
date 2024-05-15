@@ -9,6 +9,7 @@ tags:
   - Java
   - JavaWeb
   - 服务器
+permalink: /pages/e3f3f3/
 hidden: true
 index: false
 ---
